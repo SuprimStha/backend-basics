@@ -1,0 +1,171 @@
+{
+  "info": {
+    "_postman_id": "18d6ee24-5ca8-40ca-afcb-58b1410349ae",
+    "name": "Books API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57539520",
+    "_collection_link": "https://go.postman.co/collection/57539520-18d6ee24-5ca8-40ca-afcb-58b1410349ae?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET /books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /books/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET /books/999",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/books/999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books",
+            "999"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /books missing title",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "   {\n     \"author\": \"Some Author\"\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST /books.",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "   {\n     \"title\": \"Dune\",\n     \"author\": \"Frank Herbert\",\n     \"year\": 1965\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT /books/:id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "   {\n     \"title\": \"To Kill a Mockingbird\",\n     \"author\": \"Harper Lee\",\n     \"year\": 1960,\n     \"available\": false\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/books/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "books",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE /books/:id",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "GET /health",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
